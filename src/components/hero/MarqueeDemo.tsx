@@ -80,15 +80,15 @@ const ReviewCard = ({
 
 const MarqueeDemo = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg   py-20 mt-56 md:shadow-xl">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg    py-20 mt-56 md:shadow-xl">
      
       <Marquee reverse pauseOnHover className="[--duration:20s]">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3  dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3  from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 from-background"></div>
     </div>
   );
 };

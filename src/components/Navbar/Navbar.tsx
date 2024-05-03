@@ -80,7 +80,7 @@ const Navbar = () => {
               height={80}
             />
           </Link>
-          <div className="">
+          <div className="text-white">
             <p className="text-xl">BELNET</p>
             <p className="text-xl">SPACE</p>
           </div>
@@ -95,7 +95,7 @@ const Navbar = () => {
               key={index}
               className={`px-3  ${
                 activeNav === NavRoute.link ? "text-yellow-400" : ""
-              } md:mx-2 text-[14px]`}
+              } md:mx-2 text-[14px] text-white`}
             >
               <Link
                 href={NavRoute.link}

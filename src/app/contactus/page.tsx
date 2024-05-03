@@ -5,7 +5,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div className='mt-24'>
+    <div className='mt-24 bg-black'>
         <ContactForm/>
     </div>
   )
