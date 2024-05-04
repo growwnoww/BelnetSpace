@@ -22,20 +22,20 @@ const navList: NavItem[] = [
 
   {
     title: "About us",
-    link: "#roadmap",
+    link: "/contactus",
   },
   {
     title: "Services",
-    link: "#statistics",
+    link: "/contactus",
   },
   {
     title: "Products",
-    link: "/howitworks",
+    link: "/contactus",
   },
 
   {
     title: "FAQ",
-    link: "#faq",
+    link: "/contactus",
   },
   
   {

@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 
 const Info = () => {
   return (
-    <div className="flex flex-col gap-y-5 items-start justify-center mx-10 lg:mx-auto">
+    <div className="flex flex-col gap-y-5 items-start justify-center mx-10 lg:mx-auto text-white">
       <div className="flex  items-start gap-x-3 text-xl">
         <p><FaLocationDot /></p>
         <p className="max-w-xl ">

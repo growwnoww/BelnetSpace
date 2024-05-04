@@ -20,20 +20,20 @@ const navList: NavItem[] = [
   
     {
       title: "About us",
-      link: "#roadmap",
+      link: "/contactus",
     },
     {
       title: "Services",
-      link: "#statistics",
+      link: "/contactus",
     },
     {
       title: "Products",
-      link: "/howitworks",
+      link: "/contactus",
     },
   
     {
       title: "FAQ",
-      link: "#faq",
+      link: "/contactus",
     },
     
     {
@@ -99,7 +99,7 @@ const HomeHamaburger = () => {
                                 <li
                                     onClick={() => setOpen(!isOpen)}
                                     key={index}
-                                    className="bg-stone-800 rounded-md  flex items-center justify-center"
+                                    className="bg-stone-800 rounded-md  text-white flex items-center justify-center"
                                 >
                                     <Link href={item.link} className=" py-2">
                                         {item.title}

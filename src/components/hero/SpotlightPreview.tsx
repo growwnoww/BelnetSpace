@@ -16,7 +16,7 @@ export function SpotlightPreview() {
         <h1 className="text-4xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
         Belnet space<br />  Crafting Technology, Delivering Results.
         </h1>
-        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
+        <p className="mt-4 font-normal text-xs lg:text-base text-neutral-300 max-w-lg text-center mx-auto">
         Offering innovative IT solutions, including Web and mobile applications, API integration, SEO, and Blochain Development,Smart Contracts ,multimedia, tailored to meet your business needs.
         </p>
         <div className="w-full flex items-center justify-center mt-6">
