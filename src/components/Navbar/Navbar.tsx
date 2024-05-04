@@ -5,6 +5,9 @@ import Link from "next/link";
 
 
 import { IoCloseSharp, IoMenu } from "react-icons/io5";
+import { useRecoilState } from "recoil";
+import { hamaburgerAtom } from "@/store/atom";
+import HomeHamaburger from "../hero/HamburgerMenu";
 
 interface NavItem {
   title: string;
@@ -43,19 +46,20 @@ const navList: NavItem[] = [
 
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState<String>("#home");
-  
-//   const [isOpen, setOpen] = useRecoilState(homeHamaburgerAtom);
+
+  const [isOpen, setOpen] = useRecoilState(hamaburgerAtom);
 
 
-//   const toogleBtn = () => {
-//     setOpen(!isOpen);
-//   };
+  const toogleBtn = () => {
+    setOpen(!isOpen);
+  };
 
   const closeMenuOnResize = () => {
     if (window.innerWidth >= 1023) {
-    //   setOpen(false);
+      setOpen(false);
     }
   };
+
 
   useEffect(() => {
     window.addEventListener('resize', closeMenuOnResize);
@@ -109,6 +113,22 @@ const Navbar = () => {
           ))}
           {/* Wallet Connect Button */}
         </div>
+
+     
+        <div
+          className="lg:hidden border border-zinc-600 p-1 rounded-md bg-zinc-800 mr-4"
+          onClick={toogleBtn}
+        >
+          {isOpen ? (
+            <IoCloseSharp className="text-xl text-stone-400" />
+          ) : (
+            <IoMenu className="text-xl text-stone-400 " />
+          )}
+        </div>
+
+        {isOpen && <HomeHamaburger />}
+
+
 
       
       </div>
